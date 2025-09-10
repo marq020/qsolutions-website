@@ -1,0 +1,151 @@
+/* =========================
+   Reset & Global Styles
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  background-color: #503934;
+  color: #a0a0a0;
+  line-height: 1.6;
+}
+
+a {
+  color: #00d2ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   Header
+========================= */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #503934;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid #a0a0a0;
+}
+
+.site-header .logo img {
+  height: 50px;
+}
+
+.site-nav a {
+  margin-left: 2rem;
+  font-weight: bold;
+  color: #00d2ff;
+}
+
+/* =========================
+   Hero Section
+========================= */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3rem 2rem;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.hero-left img {
+  max-width: 300px;
+  width: 100%;
+  display: block;
+}
+
+.hero-right {
+  flex: 1;
+}
+
+.hero-right p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #a0a0a0;
+}
+
+/* Slideshow */
+.slideshow {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  overflow: hidden;
+}
+
+.slideshow img {
+  width: 100%;
+  display: none;
+  border-radius: 8px;
+}
+
+/* =========================
+   Clients Banner
+========================= */
+.clients-banner {
+  display: flex;
+  overflow-x: auto;
+  padding: 1rem 2rem;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.clients-banner a img {
+  height: 60px;
+  object-fit: contain;
+  transition: transform 0.3s;
+}
+
+.clients-banner a img:hover {
+  transform: scale(1.1);
+}
+
+/* Hide scrollbar for Webkit */
+.clients-banner::-webkit-scrollbar {
+  display: none;
+}
+
+/* =========================
+   Footer
+========================= */
+.site-footer {
+  background-color: #503934;
+  border-top: 1px solid #a0a0a0;
+  padding: 2rem;
+  text-align: center;
+}
+
+.site-footer .footer-nav a {
+  margin: 0 1rem;
+  color: #00d2ff;
+  font-weight: bold;
+}
+
+.site-footer .footer-contact p {
+  margin: 0.3rem 0;
+  color: #a0a0a0;
+}
+
+/* =========================
+   Responsive
+========================= */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .hero-left img {
+    max-width: 200px;
+  }
+}
