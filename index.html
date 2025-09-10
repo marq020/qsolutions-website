@@ -1,36 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Q SOLUTIONS</title>
-    <style>
-        body {
-            margin: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: #503934; /* dark background */
-            color: #00d2ff; /* light text */
-            font-family: 'Arial', sans-serif;
-            text-align: center;
-        }
-        h1 {
-            font-size: 3rem;
-            letter-spacing: 0.1em;
-        }
-        p {
-            margin-top: 1rem;
-            font-size: 1.2rem;
-            color: #a0a0a0;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q SOLUTIONS</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Optional: link to Swiper.js or other slideshow lib if desired -->
 </head>
 <body>
-    <div>
-        <h1>Q SOLUTIONS</h1>
-        <p>Coming Soon</p>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="logo">
+      <img src="assets/logo-small.png" alt="Q SOLUTIONS Logo">
     </div>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero / main section -->
+  <section class="hero">
+    <div class="hero-left">
+      <img src="assets/logo-big.png" alt="Q SOLUTIONS Logo">
+    </div>
+    <div class="hero-right">
+      <p>Your short blurb goes here. Introduce Q SOLUTIONS in 2–3 sentences.</p>
+      <div class="slideshow">
+        <img src="assets/project1.jpg" alt="Project 1">
+        <img src="assets/project2.jpg" alt="Project 2">
+        <img src="assets/project3.jpg" alt="Project 3">
+      </div>
+    </div>
+  </section>
+
+  <!-- Clients banner -->
+  <section class="clients-banner">
+    <a href="portfolio/client1.html"><img src="assets/client1.png" alt="Client 1"></a>
+    <a href="portfolio/client2.html"><img src="assets/client2.png" alt="Client 2"></a>
+    <a href="portfolio/client3.html"><img src="assets/client3.png" alt="Client 3"></a>
+    <!-- Add more as needed -->
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-contact">
+      <p>Q SOLUTIONS</p>
+      <p>Kolodvorska 76/48, Jakšić, Croatia</p>
+      <p>Phone: +385 98 928 9391</p>
+      <p>Email: <a href="mailto:marq020@gmail.com">marq020@gmail.com</a></p>
+    </div>
+  </footer>
+
+  <!-- Optional JS for slideshow -->
+  <script src="script.js"></script>
 </body>
 </html>
